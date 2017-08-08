@@ -16,11 +16,18 @@
 #
 import webapp2
 import jinja2
+import random
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
-
+        self.response.write('WELCOME TO YOUR BIRTHDAY CLENDAR! <br>')
+        horoscope=['Today will be a great day to start something new.' ,
+         'Nothing is too hard if you set your mind to it.',
+         'Everything will work out as long as you keep your goals in mind.',
+         'Remember that the best success comes from the hardest work.',
+         'Failure is in your future, everything  you think you know will turn out to be lies.',
+         'Nothing is the way that it seems.']
+         print str(random.choice(horoscope))
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
 ], debug=True)

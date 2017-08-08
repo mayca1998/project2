@@ -21,43 +21,37 @@ import os
 jinja_environment = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
 
+weekday = {
+'1':'monday',
+'2':'Tuesday',
+'3':'Wenesday',
+'4':'Thursday',
+'5':'Friday'
+}
+
+
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         template = jinja_environment.get_template('templates/main.html')
-        # week1 = {
-        # '1':'monday',
-        # '2':'Tuesday',
-        # '3':'Wenesday',
-        # '4':'Thursday',
-        # '5':'Friday'
-        # }
-
-        weekday = {'weekday'}
-
-
-        if weekday == '1':
-            variables = 'monday'
-            self.response.write(template.render(variables))
-        elif weekday == '2':
-            variables = 'Tuesday'
-            self.response.write(template.render(variables))
-
-
-        variables = {'weekday': weekday}
-        # self.response.write(template.render(variables))
 
 
 
-        # template =
-        # week1 = ['monday', 'tuesday']
-        # week2 = ['monday', 'tuesday']
-        #
-        # week_dictionary = {'week_1': week1 , 'week2': week2}
-        #
-        # self.response.out.writse(template.render(week_dictionary))
-        # self.response.write(week1['1'])
+        self.response.out.write(template.render())
+
+    def post(self):
+        template = jinja_environment.get_template('templates/result.html')
+
+        day = self.request.get('number')
+        #self.response.write(day)
+        self.response.write(weekday[day])
+        self.response.out.write(template.render())
+
+
+
+
 
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
+
 ], debug=True)

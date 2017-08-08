@@ -37,12 +37,14 @@ class MainHandler(webapp2.RequestHandler):
 
         if weekday == '1':
             variables = 'monday'
+            self.response.write(template.render(variables))
         elif weekday == '2':
             variables = 'Tuesday'
+            self.response.write(template.render(variables))
 
 
         variables = {'weekday': weekday}
-        self.response.write(template.render(variables))
+        # self.response.write(template.render(variables))
 
 
 

@@ -7,7 +7,9 @@ jinja_environment = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
 
 weekday = {
-'1':'monday',
+'1':{'1':'monday',
+
+},
 '2':'Tuesday',
 '3':'Wenesday',
 '4':'Thursday',
@@ -25,10 +27,10 @@ class MainHandler(webapp2.RequestHandler):
 
     def post(self):
         template = jinja_environment.get_template('templates/result.html')
-
-        day = self.request.get('number')
+        day = self.request.get('day')
+        month = self.request.get('month')
         #self.response.write(day)
-        self.response.write(weekday[day])
+        self.response.write(weekday[month][day])
         self.response.out.write(template.render())
 
 

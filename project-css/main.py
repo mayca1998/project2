@@ -46,7 +46,7 @@ weekday = {
      '2':'Tueday',
      '3':'Wenesday',
      '4':'Thursday',
-     '5':'Wass up',
+     '5':'So yesterday is the day that happened before today',
      '6':'Tueday',
      '7':'Wenesday',
      '8':'Thursday',
@@ -138,7 +138,7 @@ class MainHandler(webapp2.RequestHandler):
 
         self.response.write(weekday[month][day])
         self.response.out.write(template.render())
-      
+
 
 
 

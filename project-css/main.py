@@ -9,6 +9,7 @@ jinja_environment = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
 
 weekday = {
+#31
 '1':{'1':'monday',
      '2':'Tueday',
      '3':'Wenesday',
@@ -20,6 +21,7 @@ weekday = {
      '9':'Wass up',
      '10':'HI'
 },
+#29
 '2':{'1':'monday',
      '2':'Tueday',
      '3':'Wenesday',
@@ -31,6 +33,7 @@ weekday = {
      '9':'Wass up',
      '10':'HI'
 },
+#31
 '3':{'1':'monday',
      '2':'Tueday',
      '3':'Wenesday',
@@ -42,6 +45,7 @@ weekday = {
      '9':'Wass up',
      '10':'HI'
 },
+#30
 '4':{'1':'monday',
      '2':'Tueday',
      '3':'Wenesday',
@@ -53,6 +57,7 @@ weekday = {
      '9':'Wass up',
      '10':'HI'
 },
+#31
 '5':{'1':'monday',
      '2':'Tueday',
      '3':'Wenesday',
@@ -64,6 +69,7 @@ weekday = {
      '9':'Wass up',
      '10':'HI'
 },
+#30
 '6':{'1':'monday',
      '2':'Tueday',
      '3':'Wenesday',
@@ -75,6 +81,7 @@ weekday = {
      '9':'Wass up',
      '10':'HI'
 },
+#31
 '7':{'1':'monday',
      '2':'Tueday',
      '3':'Wenesday',
@@ -86,6 +93,7 @@ weekday = {
      '9':'Wass up',
      '10':'HI'
 },
+#31
 '8':{'1':'monday',
      '2':'Tueday',
      '3':'Wenesday',
@@ -97,6 +105,7 @@ weekday = {
      '9':'Wass up',
      '10':'HI'
 },
+#30
 '9':{'1':'monday',
      '2':'Tueday',
      '3':'Wenesday',
@@ -108,6 +117,7 @@ weekday = {
      '9':'Wass up',
      '10':'HI'
 },
+#31
 '10':{'1':'monday',
      '2':'Tueday',
      '3':'Wenesday',
@@ -119,6 +129,7 @@ weekday = {
      '9':'Wass up',
      '10':'HI'
 },
+#30
 '11':{'1':'monday',
      '2':'Tueday',
      '3':'Wenesday',
@@ -130,6 +141,7 @@ weekday = {
      '9':'Wass up',
      '10':'HI'
 },
+#31
 '12':{'1':'monday',
      '2':'Tueday',
      '3':'Wenesday',

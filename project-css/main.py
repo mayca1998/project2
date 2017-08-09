@@ -2,7 +2,7 @@
 import webapp2
 import jinja2
 import os
-
+import calendar
 from random import randint
 
 jinja_environment = jinja2.Environment(
@@ -120,7 +120,6 @@ weekday = {
      '10':'HI'
 },
 }
-
 
 class MainHandler(webapp2.RequestHandler):
 

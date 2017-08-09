@@ -1,8 +1,12 @@
 
+
+
 import webapp2
 import jinja2
 import os
-import calendar
+
+from random import randint
+
 jinja_environment = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
 
@@ -123,6 +127,11 @@ weekday = {
 
 
 class MainHandler(webapp2.RequestHandler):
+
+
+   
+
+
     def get(self):
         template = jinja_environment.get_template('templates/main.html')
 
@@ -143,6 +152,17 @@ class MainHandler(webapp2.RequestHandler):
 
 
 
+
+
+
+        # template =
+        # week1 = ['monday', 'tuesday']
+        # week2 = ['monday', 'tuesday']
+        #
+        # week_dictionary = {'week_1': week1 , 'week2': week2}
+        #
+        # self.response.out.writse(template.render(week_dictionary))
+        # self.response.write(week1['1'])
 
 
 

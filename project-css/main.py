@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 
 import webapp2
 import jinja2
@@ -21,8 +19,6 @@ weekday = {
      '8':'Thursday',
      '9':'Wass up',
      '10':'HI'
-
-
 },
 '2':{'1':'monday',
      '2':'Tueday',
@@ -155,14 +151,6 @@ class MainHandler(webapp2.RequestHandler):
 
 
 
-        # template =
-        # week1 = ['monday', 'tuesday']
-        # week2 = ['monday', 'tuesday']
-        #
-        # week_dictionary = {'week_1': week1 , 'week2': week2}
-        #
-        # self.response.out.writse(template.render(week_dictionary))
-        # self.response.write(week1['1'])
 
 
 
@@ -170,4 +158,3 @@ app = webapp2.WSGIApplication([
     ('/', MainHandler)
 
 ], debug=True)
->>>>>>> 8326bffd0d4e4b4819f15b0509e856a0ef42487a

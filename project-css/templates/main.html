@@ -6,23 +6,29 @@
 
 <form  action="" method="post">
 
+ <p> Month </p>
+ <input type="number" name="month" min="1" max="12">
+ <input type="number" name="day" min="1" max="31">
 
-  <input type="number" name="month" min="1" max="10">
- <input type="number" name="day" min="1" max="10">
+<!--
+ <p> Month of birth: <input type="number" name="r_month" min="1" max="12"></p>
+ <p> Day of birth: <input type="number" name="r_day" min="1" max="31"></p>
+ <p> <font size="1"> Digits only please. </font> </p>
+ -->
+ <input type="submit" value="Submit">
 
-  <input type="submit" value="Sumbit">
 
 </form>
 <style>
    form {
         position:absolute; top:200px; right: 650px;
-         border:15px solid blue;
+         border:15px solid white;
 
 
     }
 </style>
 
-<p>Two numbers between 1 and 10</p>
+<p><strong><font size="30"> Birthday Calendar </font></strong> </p>
 <style>
    p {
         position:absolute; top:50px; right:750px;

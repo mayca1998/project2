@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/usr/bin/env python
 #
 # Copyright 2007 Google Inc.
@@ -14,16 +15,139 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+=======
+>>>>>>> 970d413778050d4adf8393e6f3d3ef75e99dbcfb
 
 import webapp2
 import jinja2
 import os
+<<<<<<< HEAD
 from random import randint
 
+=======
+import calendar
+>>>>>>> 970d413778050d4adf8393e6f3d3ef75e99dbcfb
 jinja_environment = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
 
+weekday = {
+'1':{'1':'monday',
+     '2':'Tueday',
+     '3':'Wenesday',
+     '4':'Thursday',
+     '5':'Wass up',
+     '6':'Tueday',
+     '7':'Wenesday',
+     '8':'Thursday',
+     '9':'Wass up',
+     '10':'HI'
+
+
+},
+'2':{'1':'monday',
+     '2':'Tueday',
+     '3':'Wenesday',
+     '4':'Thursday',
+     '5':'Wass up',
+     '6':'Tueday',
+     '7':'Wenesday',
+     '8':'Thursday',
+     '9':'Wass up',
+     '10':'HI'
+},
+'3':{'1':'monday',
+     '2':'Tueday',
+     '3':'Wenesday',
+     '4':'Thursday',
+     '5':'Wass up',
+     '6':'Tueday',
+     '7':'Wenesday',
+     '8':'Thursday',
+     '9':'Wass up',
+     '10':'HI'
+},
+'4':{'1':'monday',
+     '2':'Tueday',
+     '3':'Wenesday',
+     '4':'Thursday',
+     '5':'Wass up',
+     '6':'Tueday',
+     '7':'Wenesday',
+     '8':'Thursday',
+     '9':'Wass up',
+     '10':'HI'
+},
+'5':{'1':'monday',
+     '2':'Tueday',
+     '3':'Wenesday',
+     '4':'Thursday',
+     '5':'Wass up',
+     '6':'Tueday',
+     '7':'Wenesday',
+     '8':'Thursday',
+     '9':'Wass up',
+     '10':'HI'
+},
+'6':{'1':'monday',
+     '2':'Tueday',
+     '3':'Wenesday',
+     '4':'Thursday',
+     '5':'Wass up',
+     '6':'Tueday',
+     '7':'Wenesday',
+     '8':'Thursday',
+     '9':'Wass up',
+     '10':'HI'
+},
+'7':{'1':'monday',
+     '2':'Tueday',
+     '3':'Wenesday',
+     '4':'Thursday',
+     '5':'Wass up',
+     '6':'Tueday',
+     '7':'Wenesday',
+     '8':'Thursday',
+     '9':'Wass up',
+     '10':'HI'
+},
+'8':{'1':'monday',
+     '2':'Tueday',
+     '3':'Wenesday',
+     '4':'Thursday',
+     '5':'Wass up',
+     '6':'Tueday',
+     '7':'Wenesday',
+     '8':'Thursday',
+     '9':'Wass up',
+     '10':'HI'
+},
+'9':{'1':'monday',
+     '2':'Tueday',
+     '3':'Wenesday',
+     '4':'Thursday',
+     '5':'Wass up',
+     '6':'Tueday',
+     '7':'Wenesday',
+     '8':'Thursday',
+     '9':'Wass up',
+     '10':'HI'
+},
+'10':{'1':'monday',
+     '2':'Tueday',
+     '3':'Wenesday',
+     '4':'Thursday',
+     '5':'Wass up',
+     '6':'Tueday',
+     '7':'Wenesday',
+     '8':'Thursday',
+     '9':'Wass up',
+     '10':'HI'
+},
+}
+
+
 class MainHandler(webapp2.RequestHandler):
+<<<<<<< HEAD
 
    def get(self):
        '''template = jinja_environment.get_template('templates/horoscop.html')
@@ -48,32 +172,31 @@ class MainHandler(webapp2.RequestHandler):
        horoscope[randint(0,15)]
        self.response.write(horoscope[randint(0,15)])
 '''
+=======
+>>>>>>> 970d413778050d4adf8393e6f3d3ef75e99dbcfb
     def get(self):
         template = jinja_environment.get_template('templates/main.html')
-        # week1 = {
-        # '1':'monday',
-        # '2':'Tuesday',
-        # '3':'Wenesday',
-        # '4':'Thursday',
-        # '5':'Friday'
-        # }
-
-        weekday = {'weekday'}
-
-
-        if weekday == '1':
-            variables = 'monday'
-            self.response.write(template.render(variables))
-        elif weekday == '2':
-            variables = 'Tuesday'
-            self.response.write(template.render(variables))
-
-
-        variables = {'weekday': weekday}
-        # self.response.write(template.render(variables))
 
 
 
+        self.response.out.write(template.render())
+
+    def post(self):
+        template = jinja_environment.get_template('templates/result.html')
+        day = self.request.get('day')
+        month = self.request.get('month')
+
+
+        self.response.write(weekday[month][day])
+        self.response.out.write(template.render())
+      
+
+
+
+
+
+
+<<<<<<< HEAD
         # template =
         # week1 = ['monday', 'tuesday']
         # week2 = ['monday', 'tuesday']
@@ -83,6 +206,10 @@ class MainHandler(webapp2.RequestHandler):
         # self.response.out.writse(template.render(week_dictionary))
         # self.response.write(week1['1'])
 '''
+=======
+
+>>>>>>> 970d413778050d4adf8393e6f3d3ef75e99dbcfb
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
+
 ], debug=True)

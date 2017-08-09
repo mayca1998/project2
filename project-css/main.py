@@ -184,6 +184,7 @@ class MainHandler(webapp2.RequestHandler):
         template = jinja_environment.get_template('templates/main.html')
         self.response.write(template.render())
 
+
     def post(self):
         template = jinja_environment.get_template('templates/result.html')
         day1 = self.request.get('day')

@@ -2,39 +2,35 @@
 <html>
   <head>
 
+  </head>
   <body>
 
-<form  action="" method="post">
-
- <p> Month </p>
- <input type="number" name="month" min="1" max="12">
- <input type="number" name="day" min="1" max="31">
+    <div id="formInput">
+      <center><p> Birthdate (mm/dd): </p></center>
+      <form  action="" method="post">
+      <input type="number" name="month" min="1" max="12">
+      <input type="number" name="day" min="1" max="31">
 
 <!--
  <p> Month of birth: <input type="number" name="r_month" min="1" max="12"></p>
  <p> Day of birth: <input type="number" name="r_day" min="1" max="31"></p>
  <p> <font size="1"> Digits only please. </font> </p>
  -->
- <input type="submit" value="Submit">
+      <input type="submit" value="Submit">
+    </form>
+  </div>
 
-
-</form>
 <style>
-   form {
+   #formInput {
         position:absolute; top:200px; right: 650px;
-         border:15px solid white;
-
-
+         border:15px solid black;
     }
 </style>
 
-<p><strong><font size="30"> Birthday Calendar </font></strong> </p>
+<p id="birthdayCalendar"><center><strong><font size="30"> Birthday Calendar </font></strong></center></p>
 <style>
-   p {
+   .birthdayCalendar {
         position:absolute; top:50px; right:750px;
-
-
-
     }
 </style>
 
@@ -75,19 +71,16 @@ background-size: 1800% 1800%;
     50%{background-position:100% 19%}
     100%{background-position:0% 82%}
 }
-@-o-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
+      @-o-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+      }
+      @keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+      }
     </style>
-
-
-
   </body>
 </html>

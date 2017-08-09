@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 
 import webapp2
 import jinja2
@@ -168,3 +170,4 @@ app = webapp2.WSGIApplication([
     ('/', MainHandler)
 
 ], debug=True)
+>>>>>>> 8326bffd0d4e4b4819f15b0509e856a0ef42487a

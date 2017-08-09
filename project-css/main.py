@@ -119,6 +119,28 @@ weekday = {
      '9':'Wass up',
      '10':'HI'
 },
+'11':{'1':'monday',
+     '2':'Tueday',
+     '3':'Wenesday',
+     '4':'Thursday',
+     '5':'Wass up',
+     '6':'Tueday',
+     '7':'Wenesday',
+     '8':'Thursday',
+     '9':'Wass up',
+     '10':'HI'
+},
+'12':{'1':'monday',
+     '2':'Tueday',
+     '3':'Wenesday',
+     '4':'Thursday',
+     '5':'Wass up',
+     '6':'Tueday',
+     '7':'Wenesday',
+     '8':'Thursday',
+     '9':'Wass up',
+     '10':'HI'
+},
 }
 
 

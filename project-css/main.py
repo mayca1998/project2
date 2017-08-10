@@ -59,7 +59,7 @@ weekday = {
 #31
 '5':{'1':'Tim McGraw',
      '2':'Baron Von Richtofen',
-     '3':'Wenesday',
+     '3':'So if you add five years to your age, thats the age you\'ll be in 5 years',
      '4':'Thursday',
      '5':'Wass up',
      '6':'George Clooney',
@@ -190,21 +190,21 @@ class MainHandler(webapp2.RequestHandler):
 
         if month1 == '2':
             if day1 == ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23']:
-              self.response.write(weekday[month1][day1])
+                self.response.write(weekday[month1][day1],day1,month1)
             else:
-              self.response.write('<br><a href="/">Back</a>')
+                self.response.write('nope')
         elif month1 == ['4','6','9','11']:
             if day1 == ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23']:
-                self.response.write(weekday[month1][day1])
+                self.response.write(weekday[month1][day1],day1,month1)
             else:
-                self.response.write('<br><a href="/">Back</a>')
+                self.response.write('nope')
         elif month1 == ['1','5','7','8','10','12']:
             if day1 == ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23']:
-                self.response.write('<br><a href="/">Back</a>')
+                self.response.write(weekday[month1][day1],day1,month1)
             else:
-                self.response.write('<br><a href="/">Back</a>')
+                self.response.write('nope')
         else:
-            self.response.write('<br><a href="/">Back</a>')
+            self.response.write('nope')
 
 
 

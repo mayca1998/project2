@@ -1,5 +1,3 @@
-
-
 import webapp2
 import jinja2
 import os
@@ -190,8 +188,29 @@ class MainHandler(webapp2.RequestHandler):
         day1 = self.request.get('day')
         month1 = self.request.get('month')
 
+        if month1 == '2':
+            if day1 == ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23']:
+              self.response.write(weekday[month1][day1])
+            else:
+              self.response.write('<br><a href="/">Back</a>')
+        elif month1 == ['4','6','9','11']:
+            if day1 == ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23']:
+                self.response.write(weekday[month1][day1])
+            else:
+                self.response.write('<br><a href="/">Back</a>')
+        elif month1 == ['1','5','7','8','10','12']:
+            if day1 == ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23']:
+                self.response.write('<br><a href="/">Back</a>')
+            else:
+                self.response.write('<br><a href="/">Back</a>')
+        else:
+            self.response.write('<br><a href="/">Back</a>')
 
-        self.response.write(weekday[month1][day1])
+
+
+
+
+        # self.response.write(weekday[month1][day1])
         self.response.out.write(template.render())
 
         #month1 = self.request.get('r_month')
@@ -243,6 +262,7 @@ class MainHandler(webapp2.RequestHandler):
         horoscope[randint(0,15)]
 
         self.response.write(horoscope[randint(0,15)])
+        self.response.write('<br><a href="/">Back</a>')
 
 
 app = webapp2.WSGIApplication([

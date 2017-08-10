@@ -520,7 +520,7 @@ class MainHandler(webapp2.RequestHandler):
             'Nothing is the way that it seems.',
             "Remember that it's not about the destination, but the adventure.",
             'All good things are worth waiting for.',
-            'Success is in your future.',
+            'Success is in your future!',
             'Nothing lasts forever, be ready to let go.',
             "Dreams show one's true desire.",
             "Don't be afraid to be yourself.",

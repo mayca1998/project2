@@ -140,9 +140,15 @@ weekday = {
 #31
 '5':{'1':'Tim McGraw',
      '2':'Baron Von Richtofen',
+<<<<<<< HEAD
      '3':'Christopher Cross',
      '4':'Randy Travis',
      '5':'Michael Murphy',
+=======
+     '3':'So if you add five years to your age, thats the age you\'ll be in 5 years',
+     '4':'Thursday',
+     '5':'Wass up',
+>>>>>>> ff77728fa9e57f4e9df1f32088938425c9986bb4
      '6':'George Clooney',
      '7':'Johnny Unitas',
      '8':'Harry S. Truman - 33rd U.S President (1945-1953)',
@@ -409,13 +415,35 @@ class MainHandler(webapp2.RequestHandler):
         template = jinja_environment.get_template('templates/main.html')
         self.response.write(template.render())
 
+
     def post(self):
         template = jinja_environment.get_template('templates/result.html')
         day1 = self.request.get('day')
         month1 = self.request.get('month')
 
+        if month1 == '2':
+            if day1 == ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20',]:
+                self.response.write(weekday[month1][day1],day1,month1)
+            else:
+                self.response.write('nope')
+        elif month1 == ['4','6','9','11']:
+            if day1 == ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23']:
+                self.response.write(weekday[month1][day1])
+            else:
+                self.response.write('nope')
+        elif month1 == ['1','5','7','8','10','12']:
+            if day1 == ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23']:
+                self.response.write(weekday[month1][day1])
+            else:
+                self.response.write('nope')
+        else:
+            self.response.write('nope')
 
-        self.response.write(weekday[month1][day1])
+
+
+
+
+        # self.response.write(weekday[month1][day1])
         self.response.out.write(template.render())
 
         #month1 = self.request.get('r_month')
@@ -504,6 +532,7 @@ class MainHandler(webapp2.RequestHandler):
         horoscope[randint(0,15)]
 
         self.response.write(horoscope[randint(0,15)])
+        self.response.write('<br><a href="/">Back</a>')
 
 
 app = webapp2.WSGIApplication([

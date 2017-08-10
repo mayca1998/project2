@@ -438,51 +438,51 @@ class MainHandler(webapp2.RequestHandler):
         if((int(month1)==3 and int(day1)>= 21)or (int(month1)==4 and int(day1)<=19)):
             image = "<img src='" + images[0] + "' />"
             self.response.write(image);
-            self.response.write('<strong> Zodiac Sign: Aries </strong>')
+            self.response.write('<br><strong> Zodiac Sign: Aries </strong>')
         if((int(month1)==4 and int(day1)>=20 )or (int(month1)==5 and int(day1)<=20)):
             image = "<img src='" + images[1] + "' />"
             self.response.write(image);
-            self.response.write('<strong> Zodiac Sign: Taurus </strong>')
+            self.response.write('<br><strong> Zodiac Sign: Taurus </strong>')
         if((int(month1)==5 and int(day1)>=21 )or (int(month1)==6 and int(day1)<=20)):
             image = "<img src='" + images[2] + "' />"
             self.response.write(image);
-            self.response.write('<strong> Zodiac Sign: Gemini </strong>')
+            self.response.write('<br><strong> Zodiac Sign: Gemini </strong>')
         if((int(month1)==6 and int(day1)>=21 )or (int(month1)==7 and int(day1)<=22)):
             image = "<img src='" + images[3] + "' />"
             self.response.write(image);
-            self.response.write('<strong> Zodiac Sign: Cancer </strong>')
+            self.response.write('<b><strong> Zodiac Sign: Cancer </strong>')
         if((int(month1)==7 and int(day1)>=22 )or (int(month1)==8 and int(day1)<=22)):
             image = "<img src='" + images[4] + "' />"
             self.response.write(image);
-            self.response.write('<strong> Zodiac Sign: Leo </strong>')
+            self.response.write('<br><strong> Zodiac Sign: Leo </strong>')
         if((int(month1)==8 and int(day1)>=23 )or (int(month1)==9 and int(day1)<=22)):
             image = "<img src='" + images[5] + "' />"
             self.response.write(image);
-            self.response.write('<strong> Zodiac Sign: Virgo </strong>')
+            self.response.write('<br><strong> Zodiac Sign: Virgo </strong>')
         if((int(month1)==9 and int(day1)>=23 )or (int(month1)==10 and int(day1)<=22)):
             image = "<img src='" + images[6] + "' />"
             self.response.write(image);
-            self.response.write('<strong> Zodiac Sign: Libra </strong>')
+            self.response.write('<br><strong> Zodiac Sign: Libra </strong>')
         if((int(month1)==10 and int(day1)>=23 )or (int(month1)==11 and int(day1)<=21)):
             image = "<img src='" + images[7] + "' />"
             self.response.write(image);
-            self.response.write('<strong> Zodiac Sign: Scorpio </strong>')
+            self.response.write('<br><strong> Zodiac Sign: Scorpio </strong>')
         if((int(month1)==11 and int(day1)>=22 )or (int(month1)==12 and int(day1)<=21)):
             image = "<img src='" + images[8] + "' />"
             self.response.write(image);
-            self.response.write('<strong> Zodiac Sign: Sagittarius </strong>')
+            self.response.write('<br><strong> Zodiac Sign: Sagittarius </strong>')
         if((int(month1)==12 and int(day1)>=22 )or (int(month1)==1 and int(day1)<=19)):
             image = "<img src='" + images[9] + "' />"
             self.response.write(image);
-            self.response.write('<strong> Zodiac Sign: Capricorn </strong>')
+            self.response.write('<br><strong> Zodiac Sign: Capricorn </strong>')
         if((int(month1)==1 and int(day1)>=20 )or (int(month1)==2 and int(day1)<=18)):
             image = "<img src='" + images[10] + "' />"
             self.response.write(image);
-            self.response.write('<strong> Zodiac Sign: Aquarius </strong>')
+            self.response.write('<br><strong> Zodiac Sign: Aquarius </strong>')
         if((int(month1)==2 and int(day1)>=19 )or (int(month1)==3 and int(day1)<=20)):
             image = "<img src='" + images[11] + "' />"
             self.response.write(image);
-            self.response.write('<strong> Zodiac Sign: Pisces </strong>')
+            self.response.write('<br><strong> Zodiac Sign: Pisces </strong>')
 
         horoscope=['Today will be a great day to start something new.' ,
             'Nothing is too hard if you set your mind to it.',
@@ -503,6 +503,7 @@ class MainHandler(webapp2.RequestHandler):
 
         horoscope[randint(0,15)]
 
+        self.response.write('<br><strong>Your horoscope for today is: </strong>')
         self.response.write(horoscope[randint(0,15)])
 
 

@@ -1,94 +1,104 @@
 <!DOCTYPE html>
 <html>
-  <head>
+ <head>
 
-  </head>
-  <body>
+ </head>
+ <body>
 
-
-
-    <div id="formInput">
-      <center><p> Birthdate (mm/dd): </p></center>
-      <form  action="" method="post">
-      <input type="number" name="month" min="1" max="12">
-      <input type="number" name="day" min="1" max="31">
+   <div id="formInput">
+     <center><strong><p style="font-size:150%;"> Birthdate (mm/dd): </p></strong></center>
+     <form  action="" method="post">
+     <input type="number" name="month" min="1" max="12">
+     <input type="number" name="day" min="1" max="31">
 
 <form  action="" method="post">
 
 
-
 <!--
- <p> Month of birth: <input type="number" name="r_month" min="1" max="12"></p>
- <p> Day of birth: <input type="number" name="r_day" min="1" max="31"></p>
- <p> <font size="1"> Digits only please. </font> </p>
- -->
-      <input type="submit" value="Submit">
-    </form>
-  </div>
+<p> Month of birth: <input type="number" name="r_month" min="1" max="12"></p>
+<p> Day of birth: <input type="number" name="r_day" min="1" max="31"></p>
+<p> <font size="1"> Digits only please. </font> </p>
+-->
+     <input type="submit" value="Submit">
+   </form>
+ </div>
 
 <style>
-   form {
-        position:fixed; top:200px; right: 650px;
-
-
-
-    }
+  #formInput {
+       position:absolute; top:200px; right: 650px;
+        border:0px solid black;
+   }
 </style>
 
-<p id="birthdayCalendar"><center><strong><font size="30"> Birthday Calendar </font></strong></center></p>
+<p id="birthdayCalendar"><center><strong><font size="55">
+<span style="color:#f00">B</span>
+<span style="color:#f50">I</span>
+<span style="color:#ff0">R</span>
+<span style="color:#f00">T</span>
+<span style="color:#f50">H</span>
+<span style="color:#ff0">D</span>
+<span style="color:#f00">A</span>
+<span style="color:#f50">Y</span>
+<span style="color:#ff0">C</span>
+<span style="color:#f00">A</span>
+<span style="color:#f50">L</span>
+<span style="color:#ff0">E</span>
+<span style="color:#f00">N</span>
+<span style="color:#f50">D</span>
+<span style="color:#ff0">A</span>
+<span style="color:#f00">R</span> </font></strong></center></p>
 <style>
-   .birthdayCalendar {
-        position:absolute; top:50px; right:750px;
-    }
+  .birthdayCalendar {
+       position:absolute; top:50px; right:750px;
+   }
 </style>
 
 
-
-    <div class="wrapper"></div>
-
+  <div class="wrapper"></div>
 
 
 
 
 
-    <style>
-    .wrapper {
-  height: 100%;
-  width: 100%;
-  left:0;
-  right: 0;
-  z-index: -2;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-background: linear-gradient(124deg, #ff2400, #000000, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+
+   <style>
+   .wrapper {
+ height: 100%;
+ width: 100%;
+ left:0;
+ right: 0;
+ z-index: -2;
+ top: 0;
+ bottom: 0;
+ position: absolute;
+background: linear-gradient(124deg, #ff2400 , #000000 , #e81d1d , #e8b71d , #e3e81d , #1de840 , #1ddde8 , #2b1de8 , #dd00f3 , #dd00f3 );
 background-size: 1800% 1800%;
 
 -webkit-animation: rainbow 28s ease infinite;
 -z-animation: rainbow 48s ease infinite;
 -o-animation: rainbow 48s ease infinite;
-  animation: rainbow 48s ease infinite;}
+ animation: rainbow 48s ease infinite;}
 
 @-webkit-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
+   0%{background-position:0% 82%}
+   50%{background-position:100% 19%}
+   100%{background-position:0% 82%}
 }
 @-moz-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
+   0%{background-position:0% 82%}
+   50%{background-position:100% 19%}
+   100%{background-position:0% 82%}
 }
-      @-o-keyframes rainbow {
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%}
-      }
-      @keyframes rainbow {
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%}
-      }
-    </style>
-  </body>
+     @-o-keyframes rainbow {
+       0%{background-position:0% 82%}
+       50%{background-position:100% 19%}
+       100%{background-position:0% 82%}
+     }
+     @keyframes rainbow {
+       0%{background-position:0% 82%}
+       50%{background-position:100% 19%}
+       100%{background-position:0% 82%}
+     }
+   </style>
+ </body>
 </html>

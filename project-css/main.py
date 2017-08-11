@@ -204,7 +204,7 @@ weekday = {
      '27':'H. Ross Perot',
      '28':'Richard Rodger',
      '29':'George W. Goethals',
-     '30':'John Cusack'
+     '30':'John Cusack',
      '31':'I was born on this day<br> -LOL'
 },
 #31
@@ -303,7 +303,7 @@ weekday = {
     '27':'Shaun Cassidy',
     '28':'Gwyneth Paltrow',
     '29':'Emily Lloyd',
-    '30':'Dominique Moceanu'
+    '30':'Dominique Moceanu',
     '31':'This day would be awesome but ......  <iframe width="854" height="480" src="https://www.youtube.com/embed/-sfRVyDHT30?ecver=1" frameborder="0" allowfullscreen></iframe>'
 },
 #31
@@ -369,7 +369,7 @@ weekday = {
     '27':'Bill Nye',
     '28':'Ed Harris',
     '29':'Anna Faris',
-    '30':'Ben Stiller'
+    '30':'Ben Stiller',
     '31':'Cookies <iframe width="854" height="480" src="https://www.youtube.com/embed/o41k-faChfA?ecver=1" frameborder="0" allowfullscreen></iframe>'
 },
 #31

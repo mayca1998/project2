@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 import webapp2
 import jinja2
 import os
@@ -438,53 +437,53 @@ class MainHandler(webapp2.RequestHandler):
         ]
 
         if((int(month1)==3 and int(day1)>= 21)or (int(month1)==4 and int(day1)<=19)):
-            image = "<img src='" + images[0] + "' />"
+            image = "<center><img src='" + images[0] + "' /></center>"
             self.response.write(image);
-            self.response.write('<br><strong> Zodiac Sign: Aries </strong>')
+            self.response.write('<br><center><strong><font size="7"> Zodiac Sign: Aries </strong></font></center>')
         if((int(month1)==4 and int(day1)>=20 )or (int(month1)==5 and int(day1)<=20)):
-            image = "<img src='" + images[1] + "' />"
+            image = "<center><img src='" + images[1] + "' /></center>"
             self.response.write(image);
-            self.response.write('<br><strong> Zodiac Sign: Taurus </strong>')
+            self.response.write('<br><center><strong><font size="7"> Zodiac Sign: Taurus </strong></font></center>')
         if((int(month1)==5 and int(day1)>=21 )or (int(month1)==6 and int(day1)<=20)):
-            image = "<img src='" + images[2] + "' />"
+            image = "<center><img src='" + images[2] + "' /></center>"
             self.response.write(image);
-            self.response.write('<br><strong> Zodiac Sign: Gemini </strong>')
+            self.response.write('<br><center><strong><font size="7"> Zodiac Sign: Gemini </strong></font></center>')
         if((int(month1)==6 and int(day1)>=21 )or (int(month1)==7 and int(day1)<=22)):
-            image = "<img src='" + images[3] + "' />"
+            image = "<center><img src='" + images[3] + "' /></center>"
             self.response.write(image);
-            self.response.write('<b><strong> Zodiac Sign: Cancer </strong>')
+            self.response.write('<b><center><strong><font size="7"> Zodiac Sign: Cancer </strong></font></center>')
         if((int(month1)==7 and int(day1)>=22 )or (int(month1)==8 and int(day1)<=22)):
-            image = "<img src='" + images[4] + "' />"
+            image = "<center><img src='" + images[4] + "' /></center>"
             self.response.write(image);
-            self.response.write('<br><strong> Zodiac Sign: Leo </strong>')
+            self.response.write('<br><center><strong><font size="7"> Zodiac Sign: Leo </strong></font></center>')
         if((int(month1)==8 and int(day1)>=23 )or (int(month1)==9 and int(day1)<=22)):
-            image = "<img src='" + images[5] + "' />"
+            image = "<center><img src='" + images[5] + "' /></center>"
             self.response.write(image);
-            self.response.write('<br><strong> Zodiac Sign: Virgo </strong>')
+            self.response.write('<br><center><strong><font size="7"> Zodiac Sign: Virgo </strong></font></center>')
         if((int(month1)==9 and int(day1)>=23 )or (int(month1)==10 and int(day1)<=22)):
-            image = "<img src='" + images[6] + "' />"
+            image = "<center><img src='" + images[6] + "' /></center>"
             self.response.write(image);
-            self.response.write('<br><strong> Zodiac Sign: Libra </strong>')
+            self.response.write('<br><center><strong><font size="7"> Zodiac Sign: Libra </strong></font></center>')
         if((int(month1)==10 and int(day1)>=23 )or (int(month1)==11 and int(day1)<=21)):
-            image = "<img src='" + images[7] + "' />"
+            image = "<center><img src='" + images[7] + "' /></center>"
             self.response.write(image);
-            self.response.write('<br><strong> Zodiac Sign: Scorpio </strong>')
+            self.response.write('<br><center><strong><font size="7"> Zodiac Sign: Scorpio </strong></font></center>')
         if((int(month1)==11 and int(day1)>=22 )or (int(month1)==12 and int(day1)<=21)):
-            image = "<img src='" + images[8] + "' />"
+            image = "<center><img src='" + images[8] + "' /></center>"
             self.response.write(image);
-            self.response.write('<br><strong> Zodiac Sign: Sagittarius </strong>')
+            self.response.write('<br><center><strong><font size="7"> Zodiac Sign: Sagittarius </strong></font></center>')
         if((int(month1)==12 and int(day1)>=22 )or (int(month1)==1 and int(day1)<=19)):
-            image = "<img src='" + images[9] + "' />"
+            image = "<center><img src='" + images[9] + "' /></center>"
             self.response.write(image);
-            self.response.write('<br><strong> Zodiac Sign: Capricorn </strong>')
+            self.response.write('<br><center><strong><font size="7"> Zodiac Sign: Capricorn </strong></font></center>')
         if((int(month1)==1 and int(day1)>=20 )or (int(month1)==2 and int(day1)<=18)):
-            image = "<img src='" + images[10] + "' />"
+            image = "<center><img src='" + images[10] + "' /></center>"
             self.response.write(image);
-            self.response.write('<br><strong> Zodiac Sign: Aquarius </strong>')
+            self.response.write('<br><center><strong><font size="7"> Zodiac Sign: Aquarius </strong></font></center>')
         if((int(month1)==2 and int(day1)>=19 )or (int(month1)==3 and int(day1)<=20)):
-            image = "<img src='" + images[11] + "' />"
+            image = "<center><img src='" + images[11] + "' /></center>"
             self.response.write(image);
-            self.response.write('<br><strong> Zodiac Sign: Pisces </strong>')
+            self.response.write('<br><center><strong><font size="7"> Zodiac Sign: Pisces </strong></font></center>')
 
         horoscope=['Today will be a great day to start something new.' ,
             'Nothing is too hard if you set your mind to it.',
@@ -513,4 +512,3 @@ app = webapp2.WSGIApplication([
     ('/', MainHandler)
 
 ], debug=True)
->>>>>>> c5b37f89d4021dd7377af4063de8c0e6b8b4851d

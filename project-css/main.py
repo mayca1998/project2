@@ -16,7 +16,7 @@ weekday = {
      '5':'Diane Keaton',
      '6':'Norman Reedus',
      '7':'Nicolas Cage',
-     '8':'Elvis Presley',
+     '8':'<strong><font size = "7">Elvis Presley</font></strong>',
      '9':'Richard M. Nixon',
      '10':'Rod Stewart',
      '11':'Rod Taylor',
@@ -47,7 +47,7 @@ weekday = {
      '3':'Joey Bishop',
      '4':'Clyde Tombaugh',
      '5':'John Jeffries',
-     '6':'Ronald Reagan',
+     '6':'<strong><font size = "7">Ronald Reagan</font></strong>',
      '7':'Charles Dickens',
      '8':'Jules Verne',
      '9':'William Henry Harrison',
@@ -82,7 +82,7 @@ weekday = {
     '7':'Rachel Weisz',
     '8':'Aidan Quinn',
     '9':'Emmanuel Lewis',
-    '10':'Carrie Underwood',
+    '10':'<strong><font size = "7">Carrie Underwood</font></strong>',
     '11':'Sam Donaldson',
     '12':'James Taylor',
     '13':'Neil Sedaka',
@@ -112,7 +112,7 @@ weekday = {
     '4':'Robert Downey Jr.',
     '5':'Pharrell Williams',
     '6':'Paul Rudd',
-    '7':'Jackie Chan',
+    '7':'<strong><font size = "7">Jackie Chan</font></strong>',
     '8':'Robin Wright ',
     '9':'Kristen Stewart',
     '10':'Mandy Moore',
@@ -147,7 +147,7 @@ weekday = {
      '7':'Johnny Unitas',
      '8':'Harry S. Truman - 33rd U.S President (1945-1953)',
      '9':'Sir James M. Barrie',
-     '10':'John Wilkes Booth',
+     '10':'<strong><font size = "7">John Wilkes Booth</font></strong>',
      '11':'Richard Feynman',
      '12':'Steve Winwood',
      '13':'Stevie Wonder - Singer, Musician',
@@ -184,7 +184,7 @@ weekday = {
      '11':'Jeannette Rankin',
      '12':'George H. W. Bush',
      '13':'Tim Allen',
-     '14':'Donald Trump',
+     '14':'<strong><font size = "7">Donald Trump</font></strong>',
      '15':'Ice Cube',
      '16':'Roberto Duran',
      '17':'Dan Jansen',
@@ -224,7 +224,7 @@ weekday = {
      '19':'George McGovern',
      '20':'Carlos Santana',
      '21':'Robin Williams',
-     '22':'Rose Kennedy',
+     '22':'<strong><font size = "7">Rose Kennedy</font></strong>',
      '23':'Monica Lewinsky',
      '24':'Jennifer Lopez',
      '25':'Walter Payton',
@@ -239,7 +239,7 @@ weekday = {
 '8':{'1':'William Clark',
      '2':"Carroll O'Connor",
      '3':'Tom Brady',
-     '4':'Louis Armstrong',
+     '4':'<strong><font size = "7">Louis Armstrong</font></strong>',
      '5':'Neil Armstrong',
      '6':'Sir Alexander Fleming',
      '7':'Charlize Theron',
@@ -272,7 +272,7 @@ weekday = {
 '9':{'1':'Zendaya',
     '2':'Salma Hayek',
     '3':'Charlie Sheen',
-    '4':'Beyonce Knowles',
+    '4':'<strong><font size = "7">Beyonce Knowles</font></strong>',
     '5':'John Cage',
     '6':'Jennifer Tilly',
     '7':'Corbin Bernsen',
@@ -305,7 +305,7 @@ weekday = {
     '2':'Kelly Ripa',
     '3':'Gwen Stefani',
     '4':'Alicia Silverstone',
-    '5':'Kate Winslet',
+    '5':'<strong><font size = "7">Kate Winslet</font></strong>',
     '6':' Elisabeth Shue',
     '7':' Simon Cowel',
     '8':' Matt Damon',
@@ -344,7 +344,7 @@ weekday = {
     '8':'Parker Posey',
     '9':'Lou Ferrigno',
     '10':'Tracy Morgan',
-    '11':'Leonardo DiCaprio',
+    '11':'<strong><font size = "7">Leonardo DiCaprio</font></strong>',
     '12':'Ryan Gosling',
     '13':'Gerard Butler',
     '14':'Josh Duhamel',
@@ -373,7 +373,7 @@ weekday = {
     '5':'Frankie Muniz',
     '6':'Andrew Cuomo',
     '7':'Edd Hall',
-    '8':'Ian Somerhalder',
+    '8':'<strong><font size = "7">Ian Somerhalder</font></strong>',
     '9':'Donny Osmond',
     '10':' Susan Dey',
     '11':'Jermaine Jackson',
@@ -413,8 +413,7 @@ class MainHandler(webapp2.RequestHandler):
         template = jinja_environment.get_template('templates/result.html')
         day1 = self.request.get('day')
         month1 = self.request.get('month')
-
-
+        self.response.write('<font color="white"><font size ="6"><strong>Did you know that you were born on the same day as: </strong></font></font>')
         self.response.write(weekday[month1][day1])
         self.response.out.write(template.render())
 
@@ -482,28 +481,28 @@ class MainHandler(webapp2.RequestHandler):
         if((int(month1)==2 and int(day1)>=19 )or (int(month1)==3 and int(day1)<=20)):
             image = "<img src='" + images[11] + "' />"
             self.response.write(image);
-            self.response.write('<br><strong> Zodiac Sign: Pisces </strong>')
+            self.response.write('<br><strong>Zodiac Sign: Pisces </strong>')
 
-        horoscope=['Today will be a great day to start something new.' ,
-            'Nothing is too hard if you set your mind to it.',
-            'Everything will work out as long as you keep your goals in mind.',
-            'Remember that the best success comes from the hardest work.',
-            'Failure is in your future, everything  you think you know will turn out to be lies.',
-            'Nothing is the way that it seems.',
-            "Remember that it's not about the destination, but the adventure.",
-            'All good things are worth waiting for.',
-            'Success is in your future.',
-            'Nothing lasts forever, be ready to let go.',
-            "Dreams show one's true desire.",
-            "Don't be afraid to be yourself.",
-            "Don't take things for granted, your may regret it",
-            "There's no such thing as imposssible.",
-            "If you're too comfortable, maybe its time for a change.",
-            "Change doesn't always have to be hard."]
+        horoscope=['<font size= "6">Today will be a great day to start something new.</font>' ,
+            '<font size= "6">Nothing is too hard if you set your mind to it.</font>',
+            '<font size= "6">Everything will work out as long as you keep your goals in mind.</font>',
+            '<font size= "6">Remember that the best success comes from the hardest work.</font>',
+            '<font size= "6">Failure is in your future, everything  you think you know will turn out to be lies.</font>',
+            '<font size= "6">Nothing is the way that it seems.</font>',
+            '<font size= "6">Remember that it\'s not about the destination, but the adventure.</font>',
+            '<font size= "6">All good things are worth waiting for.</font>',
+            '<font size= "6">Success is in your future.</font>',
+            '<font size= "6">Nothing lasts forever, be ready to let go.</font>',
+            '<font size= "6">Dreams show one\'s true desire.</font>',
+            '<font size= "6">Don\'t be afraid to be yourself.</font>',
+            '<font size= "6">Don\'t take things for granted, your may regret it.</font>',
+            '<font size= "6">There\'s no such thing as imposssible.</font>',
+            '<font size= "6">If you\'re too comfortable, maybe its time for a change.</font>',
+            '<font size= "6">Change doesn\'t always have to be hard.</font>']
 
         horoscope[randint(0,15)]
 
-        self.response.write('<br><strong>Your horoscope for today is: </strong>')
+        self.response.write('<br><font size= "6"><strong>Your horoscope for today : </strong></font>')
         self.response.write(horoscope[randint(0,15)])
 
 

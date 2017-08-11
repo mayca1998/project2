@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <script>
+     function goBack() {
+     window.history.back()
+     }
+
+   </script>
+
+</head>
+
 
 <p>{{ weekday }}</p><br>
 
 
 <br>
 <div class="wrapper"></div>
+
+
 
 <style>
 p {
@@ -62,5 +74,8 @@ animation: rainbow 48s ease infinite;}
 100%{background-position:0% 82%}
 }
 </style>
+
+<button onclick="goBack()">Go Back</button><br>
+
 
 </html>

@@ -482,7 +482,6 @@ class MainHandler(webapp2.RequestHandler):
         if((int(month1)==2 and int(day1)>=19 )or (int(month1)==3 and int(day1)<=20)):
             image = "<center><img src='" + images[11] + "' /></center>"
             self.response.write(image);
-            #self.response.write('<br><strong>Zodiac Sign: Pisces </strong>'
             self.response.write('<br><center><strong><font size="7"> Zodiac Sign: Pisces </strong></font></center>')
 
 
